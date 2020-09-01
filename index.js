@@ -42,6 +42,7 @@ async function main () {
   function parseMsg (msg) {
     try {
       return {
+        key: msg.key,
         timestamp: msg.value.timestamp,
         author: msg.value.author,
         text: msg.value.content.text
